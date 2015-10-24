@@ -51,15 +51,15 @@ window.onload = function() {
 
       var back = new Sprite(640, 640);  // 背景画像
       back.image = core.assets['./opendata_images/echizen.jpg'];
+
       // TODO: 画像はjson形式で持ってくる 街を指定すれば持ってこれる
+
+
       back.x = 0;
       back.y = 0;
       core.rootScene.addChild(back);
 
-
-      // TODO: 背景は各市町村の観光写真(オープンデータ)
-
-      // TODO: 最終問題が終わり次第終了orハート0で終了
+      // TODO: 5問生成, 3問以上正解でクリア(1問あたり34%のゴミを減らす)
 
       scene.addEventListener(Event.TOUCH_START, function(e) { // シーンにタッチイベントを設定
         //現在表示しているシーンの上にゲームオーバーシーンを重ねて表示します
